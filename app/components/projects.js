@@ -72,7 +72,7 @@ export default function Projects() {
   )
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-black via-[#0B0B0F] to-[#1A1A2E] overflow-hidden">
+    <section className="relative py-20 bg-black text-white overflow-hidden">
       {/* Animated Background Particles */}
       <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
         <div className="absolute animate-pulse bg-purple-500/10 w-48 h-48 rounded-full blur-2xl top-20 left-20"></div>
@@ -102,8 +102,8 @@ export default function Projects() {
               onClick={() => setActiveFilter(filter)}
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 
                 ${activeFilter === filter
-                  ? 'bg-purple-500 text-white scale-105'
-                  : 'bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white'
+                  ? 'bg-[#ff99cc] text-white scale-105'
+                  : 'bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-[#ff99cc]'
                 }`}
             >
               {filter}
@@ -138,7 +138,7 @@ export default function Projects() {
                 </div>
                 
                 <div className="absolute bottom-0 w-full p-6 backdrop-blur-sm">
-                  <h3 className="text-xl font-bold text-white mb-2 transition-colors group-hover:text-purple-400">
+                  <h3 className="text-xl font-bold text-white mb-2 transition-colors group-hover:text-[#ff99cc]">
                     {project.title}
                   </h3>
                   <p className="text-gray-300 text-sm mb-4">
@@ -150,7 +150,7 @@ export default function Projects() {
                       {project.category.map(cat => (
                         <span
                           key={cat}
-                          className="px-3 py-1 text-xs font-medium bg-purple-500/20 text-purple-400 rounded-full"
+                          className="px-3 py-1 text-xs font-medium bg-[#ff99cc]/20 text-[#ff99cc] rounded-full"
                         >
                           {cat}
                         </span>
@@ -161,7 +161,7 @@ export default function Projects() {
                         href={project.github} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-gray-300 hover:text-purple-400 transition-colors"
+                        className="text-[#ff99cc] hover:text-[#ff66b3] transition-colors"
                       >
                         <Github size={20} />
                       </a>
@@ -169,7 +169,7 @@ export default function Projects() {
                         href={project.live} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-gray-300 hover:text-purple-400 transition-colors"
+                        className="text-[#ff99cc] hover:text-[#ff66b3] transition-colors"
                       >
                         <ExternalLink size={20} />
                       </a>
@@ -178,7 +178,7 @@ export default function Projects() {
                 </div>
                 
                 <div className="absolute inset-0 bg-gray-900/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
-                  <button className="px-6 py-2 bg-purple-500 text-white rounded-full transform -translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                  <button className="px-6 py-2 bg-[#ff99cc] text-white rounded-full transform -translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                     View Project
                   </button>
                 </div>

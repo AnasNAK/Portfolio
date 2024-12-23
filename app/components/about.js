@@ -34,7 +34,7 @@ const About = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white py-12 px-4 md:px-6">
+    <section className="min-h-screen bg-black text-white py-12 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 order-2 md:order-1">
@@ -55,9 +55,9 @@ const About = () => {
                   <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}
-                    className={`pb-2 flex items-center gap-2 text-sm font-medium transition-all hover:text-blue-400 ${
+                    className={`pb-2 flex items-center gap-2 text-sm font-medium transition-all hover:text-[#e55b50] ${
                       activeTab === tab
-                        ? 'text-blue-400 border-b-2 border-blue-400'
+                        ? 'text-[#ff6f61] border-b-2 border-[#ff6f61]'
                         : 'text-gray-400'
                     }`}
                   >

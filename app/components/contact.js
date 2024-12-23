@@ -27,7 +27,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="relative py-20 bg-gradient-to-br from-black via-[#0B0B0F] to-[#1A1A2E] overflow-hidden">
+    <section className="relative py-20 bg-black text-white overflow-hidden">
       {/* Animated Background Particles */}
       <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
         <div className="absolute animate-pulse bg-purple-500/10 w-48 h-48 rounded-full blur-2xl top-20 left-20"></div>
@@ -111,7 +111,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg font-medium hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2 group"
+                className="px-6 py-3 rounded-full bg-coral hover:bg-coral text-white font-medium transition-all flex items-center gap-2 group"
               >
                 Send Message
                 <svg

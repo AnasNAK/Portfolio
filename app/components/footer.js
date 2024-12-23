@@ -43,7 +43,7 @@ const Footer = () => {
       initial="hidden"
       whileInView="visible"
       variants={footerVariants}
-      className="bg-gradient-to-br from-[#0B0B0F] via-[#1A1A2E] to-[#16213E] pt-20 pb-8 text-white"
+      className="bg-black text-white pt-20 pb-8"
     >
       <div className="max-w-7xl mx-auto px-6">
         <motion.div 
@@ -67,7 +67,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-gray-400 hover:text-purple-500 transition-colors"
+                  className="text-gray-400 hover:text-[#ff99cc] transition-colors"
                 >
                   <Icon className="w-6 h-6" />
                 </MotionA>
@@ -85,7 +85,7 @@ const Footer = () => {
                   whileHover={{ x: 10, color: '#9333EA' }}
                   className="text-gray-400"
                 >
-                  <MotionLink href="#" className="hover:text-purple-500 transition-colors">
+                  <MotionLink href="#" className="text-[#ff99cc] hover:text-[#ff66b3] transition-colors">
                     {service}
                   </MotionLink>
                 </motion.li>
@@ -103,7 +103,7 @@ const Footer = () => {
                   whileHover={{ x: 10, color: '#9333EA' }}
                   className="text-gray-400"
                 >
-                  <MotionLink href="#" className="hover:text-purple-500 transition-colors">
+                  <MotionLink href="#" className="text-[#ff99cc] hover:text-[#ff66b3] transition-colors">
                     {item}
                   </MotionLink>
                 </motion.li>
@@ -121,7 +121,7 @@ const Footer = () => {
                   whileHover={{ x: 10, color: '#9333EA' }}
                   className="text-gray-400"
                 >
-                  <MotionLink href="#" className="hover:text-purple-500 transition-colors">
+                  <MotionLink href="#" className="text-[#ff99cc] hover:text-[#ff66b3] transition-colors">
                     {resource}
                   </MotionLink>
                 </motion.li>
@@ -140,7 +140,7 @@ const Footer = () => {
             { Icon: Phone, text: "+1 (555) TECH-PRO" },
             { Icon: MapPin, text: "San Francisco, CA - Remote Friendly" }
           ].map(({ Icon, text }) => (
-            <div key={text} className="flex items-center gap-2 text-gray-400 hover:text-purple-300 transition-colors">
+            <div key={text} className="flex items-center gap-2 text-gray-400 hover:text-[#ff99cc] transition-colors">
               <Icon className="w-4 h-4" />
               <span>{text}</span>
             </div>
@@ -153,14 +153,14 @@ const Footer = () => {
           className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4"
         >
           <p className="text-gray-400">
-            © {currentYear} Dev Portfolio. All digital dreams realized.
+            {currentYear} Dev Portfolio. All digital dreams realized.
           </p>
           <div className="flex gap-6">
             {['Privacy', 'Terms', 'Cookies'].map((policy) => (
               <Link 
                 key={policy} 
                 href="#" 
-                className="text-gray-400 hover:text-purple-500 text-sm transition-colors"
+                className="text-[#ff99cc] hover:text-[#ff66b3] text-sm transition-colors"
               >
                 {policy} Policy
               </Link>

@@ -32,15 +32,15 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="py-24 bg-black relative overflow-hidden">
+    <section className="py-24 bg-black text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-black/40 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <p className="text-purple-400 text-sm font-medium mb-2 tracking-widest uppercase">
+          <p className="text-[#ff99cc] text-sm font-medium mb-2 tracking-widest uppercase">
             Skills & Technologies
           </p>
-          <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-white text-transparent bg-clip-text mb-6">
+          <h2 className="text-5xl font-bold bg-gradient-to-r from-[#ff99cc] via-[#ff99cc] to-white text-transparent bg-clip-text mb-6">
             My Technical Arsenal
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
@@ -52,7 +52,7 @@ export default function Skills() {
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="group relative overflow-hidden rounded-2xl bg-gray-900/50 border border-purple-900/30 p-6 text-center transition-all duration-300 hover:scale-105 hover:bg-purple-900/20"
+              className="group relative overflow-hidden rounded-2xl bg-gray-900/50 border border-[#ff99cc]/30 p-6 text-center transition-all duration-300 hover:scale-105 hover:bg-[#ff99cc]/20"
             >
               <div className="flex flex-col items-center space-y-4">
                 <div className="w-16 h-16 flex items-center justify-center">
@@ -64,7 +64,7 @@ export default function Skills() {
                     height={64} // Define height for the Image
                   />
                 </div>
-                <p className="text-gray-300 font-medium group-hover:text-white transition-colors duration-300">
+                <p className="text-[#ff99cc] font-medium group-hover:text-[#ff80bf] transition-colors duration-300">
                   {skill.name}
                 </p>
               </div>
@@ -75,4 +75,3 @@ export default function Skills() {
     </section>
   );
 }
-    
