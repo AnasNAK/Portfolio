@@ -46,7 +46,7 @@ const About = () => {
               I am a full stack web developer with a passion for creating interactive
               and responsive web applications. I have experience working with
               JavaScript, React, Redux, Node.js, Express, PostgreSQL, and more.
-              I'm always eager to learn new technologies and collaborate on exciting projects.
+              I&apos;m always eager to learn new technologies and collaborate on exciting projects.
             </p>
 
             <div className="space-y-6">

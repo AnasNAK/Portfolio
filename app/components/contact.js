@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { MapPin, Mail, Phone } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -42,7 +43,7 @@ export default function Contact() {
           className="text-center mb-12"
         >
           <p className="text-purple-500 text-sm font-medium mb-2 tracking-widest uppercase">
-            Let's Connect
+            Let&apos;s Connect
           </p>
           <h2 className="text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 text-transparent bg-clip-text mb-4">
             Get In Touch
