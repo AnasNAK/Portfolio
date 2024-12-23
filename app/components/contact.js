@@ -144,7 +144,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Location</p>
-                  <p className="text-gray-200">San Francisco, CA, United States</p>
+                  <p className="text-gray-200">N10, block 40 Qu Riyad, Safi-Morocco</p>
                 </div>
               </div>
 
@@ -154,7 +154,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Email</p>
-                  <p className="text-gray-200">jane.developer@example.com</p>
+                  <p className="text-gray-200">anasc00ding@gmail.com</p>
                 </div>
               </div>
 
@@ -164,7 +164,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Phone</p>
-                  <p className="text-gray-200">+1 (555) 123-4567</p>
+                  <p className="text-gray-200">+212 601992205</p>
                 </div>
               </div>
             </div>
